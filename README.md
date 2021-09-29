@@ -1,3 +1,3 @@
 # teflon-backend
 
-Teflon Backend Link: https://teflon-hub.heroku.com
+Teflon Backend Link: https://teflon-hub.herokuapp.com
