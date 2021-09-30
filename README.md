@@ -29,9 +29,4 @@ Body:
 
 /api/v1/paystack/make_payment
 
-# Basic Auth Security
-
-username - teflon
-
-password - newuser
 
