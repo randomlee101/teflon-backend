@@ -2,6 +2,9 @@
 
 Teflon Backend Link: https://teflon-hub.herokuapp.com
 
+- Continuous deployment via Heroku
+- CORS implementation
+
 
 # bema api 
 
