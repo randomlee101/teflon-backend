@@ -20,7 +20,6 @@ public class PaystackService implements PaystackRepo{
     @Override
     public HashMap listAllBanks() {
         HttpHeaders httpHeaders = new HttpHeaders();
-        httpHeaders.setAccept(Arrays.asList(MediaType.APPLICATION_FORM_URLENCODED));
         httpHeaders.set("Authorization", "Bearer sk_test_f0883f8236e7755cf09af916eb61975f0d4315c7");
         HttpEntity<HashMap> http = new HttpEntity<HashMap>(httpHeaders);
 
