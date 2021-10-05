@@ -23,7 +23,7 @@ public class PaystackController {
     }
 
     @GetMapping("/banks")
-    public List listBanks() throws Exception{
-        return (List) paystackRepo.listAllBanks().get("data");
+    public HashMap listBanks() throws Exception{
+        return paystackRepo.listAllBanks();
     }
 }

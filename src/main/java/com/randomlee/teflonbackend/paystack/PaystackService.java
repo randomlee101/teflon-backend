@@ -30,6 +30,7 @@ public class PaystackService implements PaystackRepo{
         }
         catch (Exception e)
         {
+            hashMap.put("error", e.getLocalizedMessage());
             System.out.println(e.getLocalizedMessage());
         }
         return hashMap;
