@@ -20,13 +20,12 @@ public class PaystackService implements PaystackRepo{
     @Override
     public HashMap listAllBanks() {
         HttpHeaders httpHeaders = new HttpHeaders();
-        httpHeaders.set("Authorization", "Bearer sk_test_f0883f8236e7755cf09af916eb61975f0d4315c7");
         HttpEntity<HashMap> http = new HttpEntity<HashMap>(httpHeaders);
 
         HashMap hashMap = null;
         try
         {
-            hashMap = restTemplate.exchange("https://jsonplaceholder.typicode.com/todos/1", HttpMethod.GET, http, HashMap.class).getBody();
+            hashMap = restTemplate.exchange("https://api.paystack.co/bank", HttpMethod.GET, http, HashMap.class).getBody();
         }
         catch (Exception e)
         {
