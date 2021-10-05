@@ -26,7 +26,7 @@ public class PaystackService implements PaystackRepo{
         HashMap hashMap = null;
         try
         {
-            hashMap = restTemplate.exchange("https://api.paystack.co/bank", HttpMethod.GET, http, HashMap.class).getBody();
+            hashMap = restTemplate.exchange("https://jsonplaceholder.typicode.com/todos/1", HttpMethod.GET, http, HashMap.class).getBody();
         }
         catch (Exception e)
         {
