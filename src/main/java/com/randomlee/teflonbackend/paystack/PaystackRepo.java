@@ -2,7 +2,6 @@ package com.randomlee.teflonbackend.paystack;
 
 import com.fasterxml.jackson.databind.util.JSONPObject;
 import org.apache.tomcat.util.json.JSONParser;
-import org.json.JSONObject;
 
 import java.util.HashMap;
 
