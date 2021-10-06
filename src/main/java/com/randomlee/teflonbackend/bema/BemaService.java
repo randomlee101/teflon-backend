@@ -29,10 +29,10 @@ public class BemaService implements BemaRepository {
 
         HashMap hashMap = null;
         try {
-            hashMap =  restTemplate.exchange("https://dashboard.teflonhub.com/v1/charges/initiate", HttpMethod.POST, entity, HashMap.class).getBody();
+            hashMap = restTemplate.exchange("https://dashboard.teflonhub.com/v1/charges/initiate", HttpMethod.POST, entity, HashMap.class).getBody();
         } catch (Exception e) {
             System.out.println("Localized: " +e.getLocalizedMessage());
-            hashMap.put("error", e.getLocalizedMessage());
+            hashMap = new HashMap();
         }
 
         return hashMap;
